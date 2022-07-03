@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="index.css" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icon.png" />
+
+    <title>NesDevs | Password Generator</title>
+  </head>
+
+  <body>
+    <main>
+      <section class="header">
+        <h1>Generate a <span> random password </span></h1>
+        <p>Never use an insecure password again.</p>
+      </section>
+      <div id="input">
+        <div class="input-group">
+          <div>
+            <label>Length:</label>
+            <input type="number" id="length" min="7" max="20" />
+          </div>
+          <div>
+            <label> Numbers:</label>
+            <input type="checkbox" id="numbers" />
+          </div>
+          <div>
+            <label> Symbols:</label>
+            <input type="checkbox" id="symbols" />
+          </div>
+        </div>
+
+        <button onclick="generatePassword()">Generate passwords</button>
+      </div>
+      <hr />
+      <div id="gen-passwords">
+        <p class="password"></p>
+        <p class="password"></p>
+        <p class="password"></p>
+        <p class="password"></p>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
